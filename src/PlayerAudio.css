@@ -1,0 +1,36 @@
+.player-audio-container a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #2e8b57;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.player-audio-container a:hover {
+  background-color: #2e8b57;
+  color: white;
+}
+
+  
+  .player-audio-container h2 {
+    color: #2f4f4f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .audio-subtitle {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  audio {
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    background: white;
+  }
+  

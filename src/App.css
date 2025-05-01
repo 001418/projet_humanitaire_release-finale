@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+  color: #222;
+}
+
+
+/* --- NAVIGATION --- */
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 25px;
+  color: #312e2e;
+}
+
+nav a {
+  margin: 0 1.2rem;
+  text-decoration: none;
+  color: #292727;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #0714cc;
+  font-size: 35px;
+}
+
+
+/* --- PAGE STANDARD --- */
+.page {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.page p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+/* --- GRILLE D’ACCUEIL --- */
+*
+
+.photo1 { border: 2px solid red; }
+.photo2 { border: 2px solid green; }
+.photo3 { border: 2px solid blue; }
+.photo4 { border: 2px solid orange; }
+.carte-centrale { border: 2px solid black; }
+
+.accueil-container {
+  min-height: 80vh;  /* ou 85vh selon l'effet voulu */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  height: max-content;
+}
+  
+
+.accueil-container h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+
+
+/* === STRUCTURE EN X === */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "photo1  empty1  photo2"
+      "empty2  carte   empty3"
+      "photo3  empty4  photo4";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* === ZONES === */
+  .photo1 { grid-area: photo1; }
+  .photo2 { grid-area: photo2; }
+  .photo3 { grid-area: photo3; }
+  .photo4 { grid-area: photo4; }
+  .carte-centrale { grid-area: carte; }
+  
+  /* === STYLE DES IMAGES === */
+
+  
+.photo {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+}
+ 
+  
+.photo:hover {
+    transform: scale(1.40);
+}
+  
+  .carte-centrale {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 4px 4px 18px rgba(0,0,0,0.2);
+    object-fit: contain;
+    border: 2px solid #ccc;
+  }
+  
+  /* === TEXTE ET PAGE === */
+  .accueil-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .accueil-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+
+  .programme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .programme {
+    max-width: 720px;     /* agrandissement contrôlé */
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .programme:hover {
+    transform: scale(1.03); /* effet de zoom léger */
+  }
+  
+
+
+  /* === FOOTER STABLE === */
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    font-size: 25px;
+    color: #444;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        "photo1"
+        "photo2"
+        "carte"
+        "photo3"
+        "photo4";
+      grid-template-columns: 1fr;
+    }
+  
+    .carte-centrale {
+      max-width: 90%;
+    }
+  
+    .photo {
+      max-width: 90%;
+    }
+  }
+  

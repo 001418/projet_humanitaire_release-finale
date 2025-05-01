@@ -1,0 +1,44 @@
+.memoire-page {
+    padding: 2rem;
+    font-family: 'Georgia', serif;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .memoire-intro {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .memoire-bloc {
+    margin-bottom: 2.5rem;
+    background: #f2ebdf;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .memoire-bloc h2 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .memoire-textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 3px solid #2543ea;
+    resize: vertical;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+  }
+  
+  .memoire-jeu {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  

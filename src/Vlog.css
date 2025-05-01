@@ -1,0 +1,64 @@
+.vlog-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+.memoire-bloc {
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+  
+.memoire-jeu {
+    text-align: center;
+    padding: 2rem 0;
+}
+  
+  /* Centrage + marges d’images */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+  
+.grid-container img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+  
+.photo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+  
+
+  /* Audio stylé */
+.audio-container {
+    background: #eef5ff;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+  
+.audio-container h3 {
+    margin-bottom: 1rem;
+    color: #003366;
+}
+  
+.audio-player {
+    width: 100%;
+}
+  

@@ -1,0 +1,29 @@
+.photo,
+.carte-centrale {
+  position: relative;
+}
+
+.photo:hover::after,
+.carte-centrale:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(180, 167, 70, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  font-size: 2rem;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
