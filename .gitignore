@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# téléchargement trop lourd. le dossier est en zip de maniére indépendante
+public/Audio/Enregistrement-long-2.mp3
