@@ -76,3 +76,12 @@ git branch -M main
 git remote add origin https://github.com/<ton_user>/<nom_du_repo>.git
 git push -u origin main
 ════════════════════════════════════════════════
+
+════════════════════════════════════════════════
+🔗 LIENS UTILES
+
+📁 Dépôt GitHub :
+https://github.com/khun1964/Projet_Humanitaire_Release_Finale
+
+📥 Archive ZIP (si disponible ailleurs) :
+(lien à compléter)

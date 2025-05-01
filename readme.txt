@@ -79,3 +79,13 @@ Il est prêt à être remis dans le cadre d’une soutenance ou d’une évaluat
 output_path = Path("/mnt/data/readme_projet_epadh.txt")
 output_path.write_text(readme_content, encoding="utf-8")
 output_path
+
+
+════════════════════════════════════════════════
+🔗 LIENS UTILES
+
+📁 Dépôt GitHub :
+https://github.com/khun1964/Projet_Humanitaire_Release_Finale
+
+📥 Archive ZIP (si disponible ailleurs) :
+(lien à compléter)
